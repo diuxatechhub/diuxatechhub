@@ -1,0 +1,325 @@
+/* ==========================
+   GLOBAL SETTINGS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    color:#333;
+    line-height:1.7;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+.navbar{
+    width:100%;
+    padding:10px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+  
+    top:0;
+    z-index:1000;
+}
+
+.logo img{
+    width:70px;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-size:14px;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#5c6cff;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+    padding:100px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:58px;
+    margin-bottom:20px;
+    color:#111;
+}
+
+.hero-content p{
+    font-size:18px;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.course-info{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.course-info span{
+    background:#f5f5f5;
+    padding:12px 20px;
+    border-radius:30px;
+    font-size:14px;
+}
+
+.course-info i{
+    margin-right:8px;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:25px;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.enroll-btn,
+.cta-btn{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    background:linear-gradient(
+        135deg,
+        #6C3BFF,
+        #00A8FF
+    );
+    transition:0.3s;
+}
+
+.enroll-btn:hover,
+.cta-btn:hover{
+    transform:translateY(-5px);
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+/* ==========================
+   OVERVIEW
+========================== */
+
+.overview p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+    color:#666;
+}
+
+/* ==========================
+   SKILLS
+========================== */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    padding:30px;
+    background:#fff;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    font-weight:600;
+}
+
+/* ==========================
+   TOOLS
+========================== */
+
+.tools-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.tool-card{
+    background:#f8f8f8;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    font-size:18px;
+    font-weight:600;
+}
+
+/* ==========================
+   CAREERS
+========================== */
+
+.career-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.career-card{
+    padding:30px;
+    background:white;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    font-weight:600;
+}
+
+/* ==========================
+   AUDIENCE
+========================== */
+
+.audience ul{
+    max-width:800px;
+    margin:auto;
+}
+
+.audience li{
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* ==========================
+   CALL TO ACTION
+========================== */
+
+.cta{
+    text-align:center;
+    background:#f8f9ff;
+}
+
+.cta p{
+    max-width:700px;
+    margin:20px auto 40px auto;
+    color:#666;
+}
+
+/* ==========================
+   MOBILE RESPONSIVENESS
+========================== */
+
+@media(max-width:992px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .course-info{
+        justify-content:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:12px 5%;
+    }
+
+    .logo img{
+        width:90px;
+    }
+
+    .hero{
+        padding:60px 5%;
+    }
+
+    .hero-content h1{
+        font-size:36px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+
+    section h2{
+        font-size:30px;
+    }
+
+    .enroll-btn,
+    .cta-btn{
+        width:100%;
+        text-align:center;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero-content h1{
+        font-size:30px;
+    }
+
+    .course-info span{
+        width:100%;
+    }
+
+}
+
+
+
+

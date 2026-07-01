@@ -71,7 +71,7 @@
         </div>
 
         <div class="hero-image">
-            <img src="images/front.png" alt="DIUXA Students">
+            <img class="hero-img" src="images/front.png" alt="DIUXA Students">
         </div>
 
     </section>
@@ -86,15 +86,23 @@
         <div class="course-grid">
 
             <div class="card"> 
-                <a href="uxdesign.html">UI/UX Design</a>
+                <a class="cardlink" href="uxdesign.html">UI/UX Design</a>
             </div>
-            <div class="card">Graphic Design</div>
-            <div class="card">Video Editing</div>
-            <div class="card">Virtual Assistance</div>
-            <div class="card">YouTube Automation</div>
-            <div class="card">Social Media Management</div>
-            <div class="card">Web Design & Development</div>
-
+            <div class="card"> 
+                <a class="cardlink" href="webdev.html">Web Development</a>
+            </div>
+            <div class="card"> 
+                <a class="cardlink" href="youtube.html">Youtube Autoomation</a>
+            </div>
+            <div class="card"> 
+                <a class="cardlink" href="va.html">Virtual Assistance</a>
+            </div>
+            <div class="card"> 
+                <a class="cardlink" href="smm.html">Social Media Management</a>
+            </div>
+            <div class="card"> 
+                <a class="cardlink" href="pve.html">Professional Video Editing</a>
+            </div>
         </div>
 
     </section>
@@ -201,6 +209,66 @@
         <p>© 2026 DIUXA Tech Hub. All Rights Reserved.</p>
 
     </footer>
+
+   <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2349069957433?text=Hello%20DIUXA%20Tech%20Hub,%20I%20would%20like%20to%20learn%20more%20about%20your%20training%20programs%20and%20tech%20services."
+        class="whatsapp-btn"
+        target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+    <script src="js/main.js"></script>
+
+
+    <!-- Popup Overlay -->
+<div class="popup-overlay" id="popupOverlay">
+
+    <div class="popup-box">
+
+        <button class="close-popup" onclick="closePopup()">
+            &times;
+        </button>
+
+        <h2>Welcome to DIUXA Tech Hub 🚀</h2>
+
+        <p>
+            How can we help you today?
+        </p>
+
+        <div class="popup-buttons">
+
+            <a href="courses.html" class="popup-btn course-btn">
+                Register for a Course
+            </a>
+
+            <a href="services.html" class="popup-btn service-btn">
+                Request a Service
+            </a>
+
+            <a href="https://wa.me/2349069957433?text=Hello%20DIUXA%20Tech%20Hub,%20I%20would%20like%20to%20speak%20with%20a%20live%20agent."
+            target="_blank"
+            class="popup-btn agent-btn">
+                Speak with a Live Agent
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+    function closePopup(){
+        document.getElementById("popupOverlay").style.display = "none";
+    }
+
+</script>
+
 
 </body>
 </html>
