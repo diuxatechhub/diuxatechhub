@@ -99,6 +99,28 @@ img{
     color: #4F46E5;
 }
 
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links a{
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+}
+
 
 /* =========================
    BUTTONS
@@ -155,19 +177,27 @@ img{
 ========================= */
 
 .hero{
-    min-height: 90vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 80px;
     background:
     radial-gradient(circle at top left,
-    rgba(0, 0, 136, 0.689),
+    rgba(0, 0, 136, 0.106),
     transparent 80%),
     radial-gradient(circle at bottom right,
-    rgb(0, 0, 136, 0.689),
+    rgba(0, 0, 136, 0.144),
     transparent 40%);
     border-radius: 30px;
+}
+
+
+.h1size{
+    font-size: 10px;
+    line-height: 1.2;
+    color: var(--dark);
+    margin-bottom: 25px;
 }
 
 .hero-text{
@@ -180,11 +210,12 @@ img{
 .badge{
     background: rgba(108, 59, 255, 0.642);
     color: var(--primary);
-    padding: 10px 20px;
+    padding: 3px 5px;
     border-radius: 50px;
     display: inline-block;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 25px;
+    margin-top: 5px;
 }
 
 .badge hover{
@@ -193,8 +224,8 @@ img{
 }
 
 .hero h1{
-    font-size: 4rem;
-    line-height: 1.2;
+    font-size: 50px;
+    line-height: 50px;
     color: var(--dark);
     margin-bottom: 25px;
 }
@@ -217,8 +248,6 @@ img{
     flex: 1;
     text-align: center;
 }
-
-
 
 
 
@@ -468,6 +497,12 @@ img{
 .section-title{
     text-align: center;
     margin-bottom: 70px;
+}
+
+
+.underline{
+    text-decoration:none;
+    color: white;
 }
 
 .section-title span{
@@ -926,8 +961,9 @@ img{
 }
 
 
-    .social-btn{
-    padding: 1px 3px;
+.social-btn{
+    padding: 10px 30px;
+    font-size: 13px;
     border: none;
     border-radius: 50px;
     background: linear-gradient(
@@ -1297,9 +1333,6 @@ footer p{
 
 
 
-
-
-
 /* Popup Background */
 
 .popup-overlay{
@@ -1411,4 +1444,75 @@ footer p{
         opacity:1;
     }
 
+}
+
+/* Scroll To Top Button */
+
+#scrollTopBtn{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    left: 675px;
+    top:  520px;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #6C3BFF, #00A8FF);
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+    z-index: 999;
+
+    transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover{
+    transform: translateY(-5px);
+}
+
+/* Mobile Size */
+
+@media(max-width:768px){
+
+    #scrollTopBtn{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+
+        bottom: 20px;
+        right: 20px;
+    }
+
+}
+
+ACTIVE STATE
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover{
+    background: #f2f2f200;
+    color: #6C3BFF;
+}
+
+/* Active Page */
+.nav-links a.active{
+    background: none;
+    color: #6C3BFF;
+    font-weight: 600;
 }

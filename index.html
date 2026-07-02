@@ -45,15 +45,18 @@
                 <a href="https://wa.me/2349069957433" class="hero-text" target="_blank">Join Virtual Training Cohort Ongoing...</a>
             </span>
 
-            <h1>
-                Learn In-Demand Tech Skills
-                and Build Your Future
+            <h1 class="h1size">
+                 Empowering Future Tech Professionals and 
+                    Delivering Digital Solutions.
             </h1>
 
             <p>
-                Join thousands of future tech professionals learning
-                practical digital skills through DIUXA Tech Hub.
-                Learn remotely from anywhere in the world.
+                <p>
+                    Join our industry-focused training programs or 
+                    partner with our expert team for web development, 
+                    design, digital marketing and innovative technology 
+                    solutions tailored to your goals.
+                </p>
             </p>
 
             <div class="hero-buttons">
@@ -189,10 +192,21 @@
         <p>hello.diuxa@gmail.com</p>
 
         <div class="socials">
-            <button>Instagram</button>
-            <button>Facebook</button>
-            <button>LinkedIn</button>
-            <button>WhatsApp</button>
+            <a href="https://web.facebook.com/hellodiuxa/" class="social-btn" target="_blank">
+        Facebook
+    </a>
+
+    <a href="https://instagram.com/diuxatechhub/" class="social-btn" target="_blank">
+        Instagram
+    </a>
+
+    <a href="https://wa.me/2349069957433" class="social-btn" target="_blank">
+        WhatsApp
+    </a>
+
+    <a href="https://www.linkedin.com/in/david-isaiah?" class="social-btn" target="_blank">
+        LinkedIn
+    </a>
         </div>
 
     </section>
@@ -270,7 +284,38 @@
 </script>
 
 
+<!-- Scroll To Top Button -->
+<button id="scrollTopBtn" title="Go to top">
+    ↑
+</button>
+
+
+
+<script>
+
+    let scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function(){
+
+        if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+            scrollBtn.style.display = "block";
+        }else{
+            scrollBtn.style.display = "none";
+        }
+
+    };
+
+    scrollBtn.onclick = function(){
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    };
+
+</script>
+
 </body>
 </html>
-```
 <link rel="stylesheet" href="style.css">
